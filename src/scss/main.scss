@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "partials/params";
+@import "partials/mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include clear();
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @include clear();
+}
+
+h1 {
+  color: $title-color;
+}
+
+a {
+  text-decoration: none;
+}
